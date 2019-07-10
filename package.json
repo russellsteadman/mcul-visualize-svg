@@ -1,13 +1,13 @@
 {
-  "name": "mcul",
-  "version": "0.1.0-alpha2",
-  "description": "A molecular parsing engine",
-  "main": "dist/mcul.node.js",
-  "repository": "https://github.com/teamtofu/mcul",
-  "homepage": "https://github.com/teamtofu/mcul",
+  "name": "mcul-visualize-svg",
+  "version": "0.1.0-alpha1",
+  "description": "A molecular visualization engine powered by MCUL",
+  "main": "dist/mculVisualizeSVG.node.js",
+  "repository": "https://github.com/teamtofu/mcul-visualize-svg",
+  "homepage": "https://github.com/teamtofu/mcul-visualize-svg",
   "author": "Russell Steadman",
   "bugs": {
-    "url": "https://github.com/teamtofu/mcul/issues",
+    "url": "https://github.com/teamtofu/mcul-visualize-svg/issues",
     "email": "steadman.21@osu.edu"
   },
   "keywords": [
@@ -44,9 +44,6 @@
     "test-update": "jest --updateSnapshot",
     "lint": "eslint src"
   },
-  "dependencies": {
-    "rd-parse": "^2.1.4"
-  },
   "jest": {
     "clearMocks": true,
     "coverageDirectory": "coverage",
@@ -68,5 +65,8 @@
       "@babel/plugin-proposal-class-properties",
       "@babel/plugin-proposal-private-methods"
     ]
+  },
+  "peerDependencies": {
+    "mcul": "^0.1.0-alpha1"
   }
 }
